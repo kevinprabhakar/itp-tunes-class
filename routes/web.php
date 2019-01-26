@@ -10,4 +10,5 @@
 //ClassName@MethodName
 
 //Controllers are located at /app/Http/Controllers
-Route::get('/', 'InvoicesController@index');
+Route::get('/', 'GenresController@genres');
+Route::get('/tracks','TracksController@tracks');
