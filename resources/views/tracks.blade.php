@@ -6,7 +6,14 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 </head>
 <body>
-  <table class="table">
+    @extends('layout')
+
+    @section('title','Tracks')
+
+    @section('main')
+    <a href="/tracks/new" class="btn btn-link">Add Track</a>
+    <table class="table">
+
     <tr>
       <th>Track Name</th>
       <th>Album Title</th>
@@ -39,5 +46,7 @@
     @endforelse
 
   </table>
+  @endsection
+
 </body>
 </html>

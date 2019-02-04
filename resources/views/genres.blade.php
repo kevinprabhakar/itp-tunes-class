@@ -29,6 +29,7 @@
         </td>
         <td>
             <a href="/tracks?genre={{$genre->Name}}">{{$genre->Name}}</a>
+            <a href="/genres/{{$genre->GenreId}}/edit" class="btn btn-primary" role="button">Edit Genre</a>
         </td>
       </tr>
     <!-- If invoices is empty... -->

@@ -9,6 +9,9 @@
 </head>
 <body>
     <!-- Yields out the main section -->
-    @yield('main')
+    <div class="container-fluid">
+        @yield('main')
+
+    </div>
 </body>
 </html>
