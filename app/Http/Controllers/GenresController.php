@@ -22,8 +22,6 @@ class GenresController extends Controller
     public function showGenreEdit($genreId = null)
     {
             return view('genreEdit');
-
-
     }
 
     public function editGenre(Request $request, $genreId=null)
