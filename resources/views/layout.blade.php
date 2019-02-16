@@ -13,7 +13,7 @@
         <ul class="nav">
             @if (Auth::check())
             <li class="nav-item">
-                <a href="/profile" class="nav-link">Signup</a>
+                <a href="/profile" class="nav-link">Profile</a>
             </li>
             <li class="nav-item">
                 <a href="/invoices" class="nav-link">Invoices</a>
