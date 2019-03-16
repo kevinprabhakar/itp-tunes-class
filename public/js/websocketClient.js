@@ -18,8 +18,10 @@ connection.onmessage = (event) => {
     document.querySelector('blockquote').append(p);
 };
 
-document.getElementById('websocketContentBlock').addEventListener('input', (event) => {
-    event.preventDefault();
-    let message = document.getElementById('websocketContentBlock').value;
-    connection.send(message);
+$(document).ready(function(){
+    document.getElementById('websocketContentBlock').addEventListener('input', (event) => {
+        event.preventDefault();
+        let message = document.getElementById('websocketContentBlock').value;
+        connection.send(message);
+    });
 });
