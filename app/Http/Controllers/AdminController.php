@@ -8,6 +8,7 @@ use App\Configuration;
 
 class AdminController extends Controller
 {
+    //Returns profile page
     public function index()
     {
         return view('admin/profile',[
@@ -15,6 +16,12 @@ class AdminController extends Controller
         ]);
     }
 
+    public function docs()
+    {
+        return view('docs');
+    }
+
+    //Returns setting page
     public function settings()
     {
         return view('settings');
