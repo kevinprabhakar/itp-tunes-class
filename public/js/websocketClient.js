@@ -16,7 +16,7 @@ connection.onmessage = (event) => {
 
 $(document).ready(function(){
     var typingTimer;
-    var doneTypingTime = 1000;
+    var doneTypingTime = 500;
     var $input = $("#websocketContentBlock")
 
     $input.on('keyup',function(){
