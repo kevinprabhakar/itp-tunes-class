@@ -6,7 +6,7 @@
 
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 
-<script type="text/javascript" src="{{ asset('js/websocketClient.js') }}"></script>
+<script type="text/javascript" src="{{ secure_asset('js/websocketClient.js') }}"></script>
 
 <div class="row">
     <div class="col">
