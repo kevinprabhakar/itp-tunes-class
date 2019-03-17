@@ -15,9 +15,22 @@ connection.onmessage = (event) => {
 };
 
 $(document).ready(function(){
-    document.getElementById('websocketContentBlock').addEventListener('keyup', (event) => {
-        event.preventDefault();
+    var typingTimer;
+    var doneTypingTime = 1000;
+    var $input = $("#websocketContentBlock")
+
+    $input.on('keyup',function(){
+        clearTimeout(typingTimer);
+        typingTimer = setTimeout(doneTyping, doneTypingTime);
+    });
+
+    $input.on('keydown', function(){
+        clearTimeout(typingTimer);
+    });
+
+    function doneTyping(){
         let message = document.getElementById('websocketContentBlock').value;
         connection.send(message);
-    });
+    }
+
 });
