@@ -10,8 +10,8 @@
 
 <div class="row">
     <div class="col">
-        <blockquote id="websocketContentBlock" contenteditable="true">
-        </blockquote>
+        <textarea rows="10" cols="100" id="websocketContentBlock" contenteditable="true">
+        </textarea>
     </div>
 </div>
 
