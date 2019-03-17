@@ -1,4 +1,4 @@
-let connection = new WebSocket('ws://kprabhakar-websocket-demo.herokuapp.com');
+let connection = new WebSocket('wss://kprabhakar-websocket-demo.herokuapp.com');
 
 connection.onopen = () => {
     console.log('connected from the frontend');
